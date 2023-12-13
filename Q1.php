@@ -1,4 +1,8 @@
 <?php 
+//you can include this file with include('Q1.php')
+//pass the array with the function
+
+
 //example of associative array
 $assocArray = array(
     'Google' => 'https://www.google.com',
@@ -8,14 +12,14 @@ $assocArray = array(
 
 //pre:      takes an associative array
 //post:     prints a html link with the value and key
-function creatLinks($assocArray){
+function createLinks($assocArray){
     foreach($assocArray as $key => $value){
         echo '<a href="' . $value . '">' . $key . '</a><br>';
     }
 }
 
-//us this for testing
-//creatLinks($assocArray);
+//use this for testing
+//createLinks($assocArray);
 
 //or do this
 
@@ -34,6 +38,6 @@ $linksArray = array(
     "https://www.facebook.com", 
     "https://www.twitter.com");
 
-//us this for testing
+//use this for testing
 //createLinks2($linksArray);
 ?>
