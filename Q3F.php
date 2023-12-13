@@ -8,7 +8,7 @@
 function form1(){
 //simple form that uses post
 print '
-        <form action="Q3F.php" method="post">
+        <form action="Q3.php" method="post">
         <h2>Name</h2>
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required>
@@ -23,15 +23,26 @@ function form2(){
     //simple form that uses post
     //remove required if you wanna do more work
 print '
-<form action="Q3F.php" method="post">
-<h2>Name</h2>
+<form action="Q3.php" method="GET">
 <label for="username">Username:</label>
 <input type="text" id="username" name="username" required>
 
-<label for="temp">temp:</label>
+<br>
+
+<label for="temp">Temp:</label>
 <input type="text" id="temp" name="temp" required>
 
-<button type="submit">Login</button>
+<br>
+
+<label for="options">Choose a temp system:</label>
+<select id="options" name="options">
+    <option value="cel">Celsius</option>
+    <option value="fah">Fahrenheit</option>
+</select>
+
+<br>
+
+<button type="Submit">submit</button>
 </form>';
 }
 ?>

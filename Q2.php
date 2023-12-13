@@ -27,6 +27,7 @@ function createLinks($assocArray){
 //or do this
 
 
+//!!!       Dont copy the array cus it will output the same thing every time
 //pre:      takes an associative array
 //post:     prints a html table formatted as [$value][$key]
 function createLinks2($linksArray){
