@@ -23,7 +23,7 @@ function form2(){
     //simple form that uses post
     //remove required if you wanna do more work
 print '
-<form action="Q3.php" method="GET">
+<form action="Q3.php" method="POST">
 <label for="username">Username:</label>
 <input type="text" id="username" name="username" required>
 

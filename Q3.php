@@ -1,6 +1,7 @@
 <?php 
 include('Q3F.php');
 
+//using post on the form
 //using request for testing, prolly should change it to post for less headache later on
 if(isset($_REQUEST['username'])){
     print "<table>";
@@ -16,6 +17,7 @@ if(isset($_REQUEST['username'])){
     print "</table>";
 }
 
+//prints the form if theres no data from post
 else{
 form2();
 }
