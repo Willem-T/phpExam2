@@ -20,8 +20,9 @@ else{
 form2();
 }
 
-//make this output html calcs
 //too lazy to fix the additional percision points
+//pre:      takes an numb and the system its using
+//post:     returns the calculation for the opposite system
 function tempCalc($temp, $system){
     if($system == "cel"){
         return ($temp * (9/5) +32);
@@ -31,7 +32,8 @@ function tempCalc($temp, $system){
     }
 }
 
-
+//pre:      takes the session var of options
+//post:     returns the opposite of the var string
 function dumbAssStupidphp(){
     if($_REQUEST['options'] == "cel"){
         return "Fahrenheit";
