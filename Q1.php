@@ -14,12 +14,16 @@ function creatLinks($assocArray){
     }
 }
 
+//us this for testing
+//creatLinks($assocArray);
+
 //or do this
 
 //pre:      takes an array of links
 //post:     prints html links to corresponding links
 function createLinks2($linksArray){
     for($i = 0; $i < count($linksArray); $i++){
+        //
         echo '<a href="' . $linksArray[$i] . '">Link ' . ($i + 1) . '</a><br>'; 
     }
 }
@@ -29,5 +33,7 @@ $linksArray = array(
     "https://www.google.com", 
     "https://www.facebook.com", 
     "https://www.twitter.com");
-createLinks2($linksArray);
+
+//us this for testing
+//createLinks2($linksArray);
 ?>
