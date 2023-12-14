@@ -19,6 +19,7 @@ function createLinks($assocArray){
         echo '<td style="border: 1px solid #000; padding: 8px;"><a href="' . $value . '">Link ' . $key . '</a></td>';
         echo '</tr>';
     }
+    echo '</table>';
 }
 
 //use this for testing
@@ -46,6 +47,7 @@ function createLinks2($linksArray){
         echo '<td style="border: 1px solid #000; padding: 8px;">' . $value . '</td><td style="border: 1px solid #000; padding: 8px;"> ' . $key . '</td>';
         echo '</tr>';
     }
+    echo '</table>';
 }
 //use this for testing
 //createLinks2($linksArray);

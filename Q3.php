@@ -6,7 +6,7 @@ include('Q3F.php');
 if(isset($_REQUEST['username'])){
     print "<table>";
 
-    print 'username, '. $_REQUEST['temp'] . ' ' . $_REQUEST['options'] .' , temp convert to '. dumbAssStupidphp() .'';
+    print 'username, '. $_REQUEST['temp'] . ' ' . $_REQUEST['options'] .' , temp convert to '. returnTempSystem() .'';
     print '<tr>';
     print '<td style="border: 1px solid #000; padding: 8px;">' . $_REQUEST['username'] . '</td>
     <td style="border: 1px solid #000; padding: 8px;">' . $_REQUEST['temp'] . 
@@ -36,7 +36,7 @@ function tempCalc($temp, $system){
 
 //pre:      takes the session var of options
 //post:     returns the opposite of the var string
-function dumbAssStupidphp(){
+function returnTempSystem(){
     if($_REQUEST['options'] == "cel"){
         return "Fahrenheit";
     }

@@ -49,6 +49,10 @@
             xmlhttp.open("GET", "previewImage.php?q=" + str, true);
             xmlhttp.send();
         }
+        //needs this in the header of the file to work
+        //<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"> 
+        
+
         //old jquery
         /*$(document).ready(function () {
             
